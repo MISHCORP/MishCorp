@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MishCorp</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <title>MishCorp | Innovation from Air</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
+      background-color: #f4f6f8;
     }
     .navbar-brand img {
       height: 40px;
     }
     .hero {
-      background-color: #0d6efd;
+      background: linear-gradient(to right, #0d6efd, #0a58ca);
       color: white;
       padding: 100px 0;
       text-align: center;
@@ -25,18 +25,23 @@
     }
     .hero p {
       font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
     }
-    .features {
+    .section {
       padding: 60px 0;
+    }
+    .section h2 {
+      margin-bottom: 30px;
     }
     .feature-icon {
       font-size: 2rem;
       color: #0d6efd;
     }
     .footer {
-      background-color: #343a40;
+      background-color: #212529;
       color: white;
-      padding: 30px 0;
+      padding: 40px 0;
       text-align: center;
     }
   </style>
@@ -56,32 +61,66 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <h1>Welcome to MishCorp</h1>
-      <p>Innovating the future, one solution at a time.</p>
-      <a href="#features" class="btn btn-light mt-4">Learn More</a>
+      <h1>Water Innovation from Air</h1>
+      <p>At MishCorp, we transform atmospheric humidity into clean, mineral-rich drinking water — no pipes, no plastic, no limits.</p>
+      <a href="#technology" class="btn btn-light mt-4">Explore Our Technology</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="features">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <div class="feature-icon mb-3">🚀</div>
-          <h5>Cutting-Edge Technology</h5>
-          <p>We deliver modern solutions powered by the latest innovations in tech.</p>
+  <!-- Technology Section -->
+  <section id="technology" class="section bg-white">
+    <div class="container text-center">
+      <h2>How It Works</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-icon mb-3">🌬️</div>
+          <h5>Air Intake</h5>
+          <p>High-efficiency exchangers draw moisture from ambient air.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="feature-icon mb-3">🤝</div>
-          <h5>Client-Centric Approach</h5>
-          <p>Your success is our mission. We tailor every project to your needs.</p>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3">🧪</div>
+          <h5>Purification</h5>
+          <p>Multi-stage filtration removes impurities and balances pH levels.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="feature-icon mb-3">🌍</div>
-          <h5>Global Impact</h5>
-          <p>Our services reach across borders, making a difference worldwide.</p>
+        <div class="col-md-4">
+          <div class="feature-icon mb-3">💧</div>
+          <h5>Mineralization</h5>
+          <p>Water is enriched with essential minerals and delivered fresh.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="section">
+    <div class="container text-center">
+      <h2>Industries We Serve</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <h6>🏢 Commercial</h6>
+          <p>Solutions for offices, hotels, and public infrastructure.</p>
+        </div>
+        <div class="col-md-3">
+          <h6>🏠 Residential</h6>
+          <p>Turn any home into a self-sufficient water source.</p>
+        </div>
+        <div class="col-md-3">
+          <h6>🚐 Mobility</h6>
+          <p>Fresh water on the move — anytime, anywhere.</p>
+        </div>
+        <div class="col-md-3">
+          <h6>🌍 Humanitarian</h6>
+          <p>Emergency and off-grid deployments for global relief efforts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Impact Section -->
+  <section class="section bg-white">
+    <div class="container text-center">
+      <h2>Global Reach</h2>
+      <p>MishCorp devices are deployed across six continents — empowering communities, hospitals, and governments with sustainable water access.</p>
     </div>
   </section>
 
@@ -89,13 +128,13 @@
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 MishCorp. All rights reserved.</p>
+      <p>Contact us: info@mishcorp.com</p>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Optional: Add smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
